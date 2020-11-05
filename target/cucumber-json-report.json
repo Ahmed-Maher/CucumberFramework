@@ -1,0 +1,94 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-05T14:33:24.197Z",
+        "line": 10,
+        "name": "",
+        "description": "",
+        "id": "free-crm-login-feature;;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5981702800,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "user is already on the login page",
+            "match": {
+              "location": "stepDefinitions.LoginStepdefs.userIsAlreadyOnTheLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17952400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the title of the login page is Free CRM",
+            "match": {
+              "location": "stepDefinitions.LoginStepdefs.theTitleOfTheLoginPageIsFreeCRM()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 286233000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters the \"vadoc61635@tibui.com\" and \"Testerfreelance2\" and click on the login button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"vadoc61635@tibui.com\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Testerfreelance2\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinitions.LoginStepdefs.userEntersTheEmailAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003cCogmento []CRM\u003e but was:\u003cCogmento [g]CRM\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepDefinitions.LoginStepdefs.theUserOnTheHomePage(LoginStepdefs.java:40)\r\n\tat ✽.the user on the home page(file:///C:/Users/ahmed.khalifa/Ahmed_WS/CucumberFramework/src/test/java/Feature/login.feature:6)\r\n",
+              "duration": 5984400,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "the user on the home page",
+            "match": {
+              "location": "stepDefinitions.LoginStepdefs.theUserOnTheHomePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the user close the browser",
+            "match": {
+              "location": "stepDefinitions.LoginStepdefs.theUserCloseTheBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Free CRM login feature",
+    "description": "",
+    "id": "free-crm-login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Feature/login.feature",
+    "tags": []
+  }
+]
