@@ -14,9 +14,6 @@ public class LoginStepdefs extends Testbase {
     LoginPage loginPage;
     HomePage homePage;
 
-    public LoginStepdefs(){
-        super();
-    }
 
     @Given("user is already on the login page")
     public void userIsAlreadyOnTheLoginPage() {
